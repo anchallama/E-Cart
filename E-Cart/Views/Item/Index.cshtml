@@ -157,8 +157,11 @@
                     return myXhr;
                 },
                 success: function (data) {
-                    alert(data);
-                    ResetItem();
+
+                    if (data.Success) {
+                        alert(data.Message);
+                        ResetItem();
+                    }
                 },
                 error: function () {
                     alert("There is more problems to add Item.");
