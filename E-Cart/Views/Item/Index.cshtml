@@ -135,7 +135,7 @@
             formData.append("ItemName", $("#ItemName").val());
             formData.append("Description", $("#Description").val());
             formData.append("ItemPrice", $("#ItemPrice").val());
-            formData.append("ImagePath", $("#ImagePath").get(0).files, );
+            formData.append("ImagePath", $("#ImagePath").get(0).files[0] );
 
             //// var data = $("#itemFrm").serialize();
 
@@ -184,16 +184,16 @@
             $(progress_bar_id + " .status").text(percent + "%");
         };
 
-        //Change id to your id
-        $("#ImagePath").on("change", function (e) {
-            var file = $(this)[0].files[0];
-            var upload = new Upload(file);
+        ////Change id to your id
+        //$("#ImagePath").on("change", function (e) {
+        //    var file = $(this)[0].files[0];
+        //    var upload = new Upload(file);
 
-            // maby check size or type here with upload.getSize() and upload.getType()
+        //    // maby check size or type here with upload.getSize() and upload.getType()
 
-            // execute upload
-            upload.doUpload();
-        });
+        //    // execute upload
+        //    upload.doUpload();
+        //});
 
     </script>
 }
