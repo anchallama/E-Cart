@@ -17,5 +17,6 @@ namespace E_Cart.Models
         public int CategoryId { get; set; }
         public string CategoryCode { get; set; }
         public string CategoryName { get; set; }
+        public string ItemCode { get; internal set; }
     }
 }
